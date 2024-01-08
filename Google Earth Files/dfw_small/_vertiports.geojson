@@ -1,0 +1,5 @@
+{"type":"FeatureCollection", "features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.88530085555976,33.17983424655244,0]},"properties":{"name":"Departure A"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.89131560186755,33.16951899451234,0]},"properties":{"name":"Departure B"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.88948700838858,33.17676894865891,0]},"properties":{"name":"Departure C"}}
+]}

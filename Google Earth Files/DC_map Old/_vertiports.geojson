@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "Vertiports",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "IAD Connect", "description": null }, "geometry": { "type": "Point", "coordinates": [ -77.115391293165573, 38.854725933108021 ] } },
+{ "type": "Feature", "properties": { "Name": "Airport", "description": null }, "geometry": { "type": "Point", "coordinates": [ -77.045981580378523, 38.846232956721678 ] } },
+{ "type": "Feature", "properties": { "Name": "Sports Field", "description": null }, "geometry": { "type": "Point", "coordinates": [ -77.094661628364094, 38.870225917347923 ] } },
+{ "type": "Feature", "properties": { "Name": "Pentagon", "description": null }, "geometry": { "type": "Point", "coordinates": [ -77.056033005144414, 38.87060919565814 ] } },
+{ "type": "Feature", "properties": { "Name": "Island", "description": null }, "geometry": { "type": "Point", "coordinates": [ -77.060830097955403, 38.894395174874482 ] } },
+{ "type": "Feature", "properties": { "Name": "Heli Pad", "description": null }, "geometry": { "type": "Point", "coordinates": [ -77.05110998024351, 38.90089125996991 ] } },
+{ "type": "Feature", "properties": { "Name": "AFB", "description": null }, "geometry": { "type": "Point", "coordinates": [ -77.013217914603956, 38.854692875789077 ] } },
+{ "type": "Feature", "properties": { "Name": "Hub (Train)", "description": null }, "geometry": { "type": "Point", "coordinates": [ -77.006655374569618, 38.896266633268191 ] } },
+{ "type": "Feature", "properties": { "Name": "BWI Connection", "description": null }, "geometry": { "type": "Point", "coordinates": [ -76.944953964515193, 38.905475785188393 ] } }
+]
+}

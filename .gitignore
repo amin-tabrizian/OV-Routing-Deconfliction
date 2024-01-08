@@ -1,0 +1,9 @@
+*Pipfile*
+*.bat
+*.kmz
+*/__pycache__
+.vscode
+out
+*.pyc
+*.temp*
+*temp*
