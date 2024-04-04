@@ -26,8 +26,8 @@ from src.Simulation import Simulator
 __author__ = "Ellis Thompson"
 
 # Constants
-ROUTE_PATH = Path(".\\Google Earth Files\\DC_map") if os.name != 'posix' else Path(
-    "./Google Earth Files/DC_map")
+ROUTE_PATH = Path(".\\Google Earth Files\\Dallas_map") if os.name != 'posix' else Path(
+    "./Google Earth Files/Dallas_map")
 OUT_PATH = Path('.\\out\\') if os.name != 'posix' else Path('./out/')
 COLOURS = [(255, 0, 0), (0, 255, 0), (0, 0, 255), (0, 0, 0), (255, 255, 255),
            (255, 255, 0), (0, 255, 255), (255, 0, 255), (180, 40, 200)]
@@ -294,5 +294,5 @@ def genOVs(traces: np.ndarray, airspace: dict, route, n_traces: int = 20, max_wo
 
 
 if __name__ == "__main__":
-    main(list(np.random.choice(list(range(9)),size = 2, replace=False)), show_plots=True,
-         max_workers=20, method='AStar', ov_mode='spheroid', n_ac=100, speed_bounds=[17,21])
+    main(list(np.random.choice(list(range(2)),size = 2, replace=False)), show_plots=True,
+         max_workers=20, method='AStar', ov_mode='spheroid', n_ac=1, speed_bounds=[17,21])
