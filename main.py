@@ -169,7 +169,7 @@ def genRRT(start: int, goal: int, airspace: dict, n_iter=5000, step_size=500, en
     return rrt
 
 
-def genAStar(start: int, goal: int, airspace: dict, ovs, speed_bounds, n_iter=25000, dist=1000, show_plots=True):
+def genAStar(start: int, goal: int, airspace: dict, ovs, speed_bounds, n_iter=50000, dist=2000, show_plots=True):
     # Initilise RRT class
     offset = np.random.poisson(lam=5)*20
     # offset = -27
