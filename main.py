@@ -38,18 +38,18 @@ def main(points: List[int] = None, show_plots: bool = True, max_workers: int = 2
     # Import airspace from file
     airspace: dict = prepareSpace(ROUTE_PATH)
     ovs = Airspace(airspace['airspace'])
-    ovs.load_airspace(['Airspace OVs/8-2 20 Operational Volumes 1.npy',
-                       'Airspace OVs/2-0 80 Operational Volumes 2.npy',
-                       'Airspace OVs/4-8 120 Operational Volumes 3.npy',
-                       'Airspace OVs/2-5 60 Operational Volumes 4.npy',
-                       'Airspace OVs/5-0 100 Operational Volumes 5.npy',
-                       'Airspace OVs/4-7 100 Operational Volumes 6.npy',
-                       'Airspace OVs/5-8 210 Operational Volumes 7.npy',
-                       'Airspace OVs/0-5 230 Operational Volumes 8.npy',
-                       'Airspace OVs/8-5 160 Operational Volumes 9.npy',
-                       'Airspace OVs/2-3 120 Operational Volumes 10.npy'
-                       ], 
-                      [248, 188, 22, 157, 117,7,109,0,202, 166, 41,83,223,94,92, 52, 79,18,64,125,131,289,163,13,300, 1, 14, 38,97,188, 249])
+    # ovs.load_airspace(['Airspace OVs/8-2 20 Operational Volumes 1.npy',
+    #                    'Airspace OVs/2-0 80 Operational Volumes 2.npy',
+    #                    'Airspace OVs/4-8 120 Operational Volumes 3.npy',
+    #                    'Airspace OVs/2-5 60 Operational Volumes 4.npy',
+    #                    'Airspace OVs/5-0 100 Operational Volumes 5.npy',
+    #                    'Airspace OVs/4-7 100 Operational Volumes 6.npy',
+    #                    'Airspace OVs/5-8 210 Operational Volumes 7.npy',
+    #                    'Airspace OVs/0-5 230 Operational Volumes 8.npy',
+    #                    'Airspace OVs/8-5 160 Operational Volumes 9.npy',
+    #                    'Airspace OVs/2-3 120 Operational Volumes 10.npy'
+    #                    ], 
+    #                   [248, 188, 22, 157, 117,7,109,0,202, 166, 41,83,223,94,92, 52, 79,18,64,125,131,289,163,13,300, 1, 14, 38,97,188, 249])
     # ovs.load_airspace(['Airspace OVs/shperoid Operational Volumes.npy'], [0])
 
     # ovs_np = np.load('Airspace OVs\Operational Volumes.npy', allow_pickle=True)
@@ -169,7 +169,7 @@ def genRRT(start: int, goal: int, airspace: dict, n_iter=5000, step_size=500, en
     return rrt
 
 
-def genAStar(start: int, goal: int, airspace: dict, ovs, speed_bounds, n_iter=20000, dist=500, show_plots=True):
+def genAStar(start: int, goal: int, airspace: dict, ovs, speed_bounds, n_iter=25000, dist=1000, show_plots=True):
     # Initilise RRT class
     offset = np.random.poisson(lam=5)*20
     # offset = -27
